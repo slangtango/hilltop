@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>Hilltop Tavern, Louisville, KY</title>
+	<link rel="stylesheet" type="text/css" href="hilltopstyles.css"
+</head>
+<body>
+
+<!--Begin by creating permanent top navigation bar, with main logo and options to visit other sections of the page  -->
+
+	<div id="topnavbar">
+		<div id="logodiv">
+		<img src="Images/hilltopsign2.jpg" alt="Hilltop Tavern logo">
+		<!-- <h1 id="mainlogo">HILLTOP TAVERN</h1> -->
+		</div>
+		<div id="navmenu">	
+			<div class="nav-element">
+		  		<img src="tiger.jpg">
+		  		<span><select id="menus" onChange="changeMenu();">Menus
+		  			<option value="foodmenu" selected="false">Food</option>
+		  			<option value="boozemenu">Booze</option>
+		  			<option value="gamesmenu">Games</option>
+		  		</select></span>
+
+		  	</div>
+		  	<div class="nav-element">
+		  		<img src="giraffe.jpg">
+		  		<span>Art Gallery</span>
+		  	</div>
+		  	<div class="nav-element">	
+		  		<img src="elephant.jpg">
+		  		<span>About Hilltop</span>
+			</div>
+		</div>	
+	</div>
+
+<!--Next create a permanent sidebar with basic information -->
+	<div id="sidebar">
+		<h1>Bar Hours</h1>
+				<p>Monday - Sunday</p> 
+				<p>5pm-2am</p>
+				<p>Tuesday - Saturday</p> 
+				<p> 5pm-4am</p>
+		<h1>Kitchen Hours</h1>
+				<p>Sunday-Thursday</p> 
+				<p>5pm-1am</p>
+				<p>Friday - Saturday</p> 
+				<p>5pm-3am</p>
+		<h1>502-742-2908</h1>
+		<h1>Address</h1>
+			<p>1800 Frankfort Avenue, Louisville KY, 40206</p>
+			<p>Like us on <a href="http://www.facebook.com/ilovehilltop">Facebook</a></p>
+	</div>
+
+<!--The following div exists to hold and position the background image -->
+
+	<div id="background-div"> 
+
+	<!-- The next section will contain the main content of the page. CSS Display value will be toggled by Javscript as menus are selected-->
+		<div id="main-content-div">
+			<div id="content-left">
+				<div id="default-content">	
+					<p>Welcome to Hilltop Tavern, home of the best brews and barbecues in all of Clifton, and possibly the universe.</p>
+					<br/>
+					<p>Click the menus above to view our many fine offerings</p>
+				</div>
+			<div id="content-right">
+				<img src="shiner tablecloth.jpg">
+				<p>This should be a rotating gallery of images</p>
+			</div>
+		</div>
+	</div>
+	<script src="hilltop.js"></script>
+</body>
