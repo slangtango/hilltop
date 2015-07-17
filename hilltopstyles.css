@@ -59,7 +59,7 @@ body {
 #background-div {
 	width: 100%;
 	height: 100%;
-	background-image: url("background1.jpg");
+	background-image: url("Images/background1.jpg");
 	/* alt: background-image: url("shiner tablecloth.jpg"); */
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -272,7 +272,21 @@ MAIN CONTENT
 }
 
 
+#footer {
+	position: fixed;
+	bottom: 0;
+	height: 5%;
+	width: 100%;
+	z-index: 1;
+	background-color: rgba(19,20,25,.8);
+	color: white;
+	text-align: center;
+	font-size: .5em;
+}
 
+#footer p {
+	padding-top: 2%;
+}
 
 
 
