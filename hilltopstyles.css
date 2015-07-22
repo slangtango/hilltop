@@ -54,19 +54,16 @@ WHOLE PAGE STYLES
 
 body {
 	font-family: Verdana, Geneva, sans-serif;
-}
-
-#background-div {
-	width: 100%;
-	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
 	background-image: url("Images/background1.jpg");
-	/* alt: background-image: url("shiner tablecloth.jpg"); */
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
 	background-position: 0px 80px;
 	z-index: -1;
 }
+
 /**********************
 NAVIGATION ELEMENTS 
 ***********************/
@@ -139,36 +136,6 @@ NAVIGATION ELEMENTS
 	display: inline-block;
 }
 
-}
-
-/*Creating a drop down that appears only when element is hovered over */
-/* #navmenu ul ul {
-	display: none;
-} */
-
-/* #navmenu ul li:hover ul {
-	display: block;
-}
-*/
-/* Fixing positioning of navigation menus */
-/* #navmenu ul {
-	position: relative;
-}
-*/
-/* #navmenu ul ul {
-	position: absolute;
-	list-style: none;
-	margin-top: 10px;
-} */
-
-/*For some reason commenting out the rule below causes layout to go haywire even though the rules are all commented out themselves - why? */
-#navmenu ul li ul li {
-	/* position: relative; */
-	/* width: 100px; */
-	/* z-index: 3; */
-	/* float: none; */
-	/* background-color: rgb(19,20,25); */
-}
 
 /*********************
 SIDEBAR STYLES
@@ -200,7 +167,7 @@ MAIN CONTENT
 **********************/
 
 
-/* Styles for restaurant's food, booze, and games menus */
+/* Styles for yellow box containing restaurant's food, booze, and games menus */
 #main-content-div {
 	position: absolute;
 	left: 22%;
@@ -208,42 +175,36 @@ MAIN CONTENT
 	max-width: 1200px;
 	z-index: 0;
 	color: black;
-	background-color: rgba(250,248,150,.3);
-	margin-top: 250px;
+	background-color: rgba(250,248,150,.4);
 	/*optional #FAF896 light yellow */
 
-	/* confirm this code below is a good idea - not compatible with all browsers? */
-	 -webkit-column-count: 2;
-	-webkit-column-gap: 20px; 
 }
-
-#content-left {
-	float: left;
-	display: inline-block;
-	padding: 5%;
-	font-size: 1.5em;
-	font-weight: bold;
-}
-
-#content-right {
-	display: inline-block;
-	padding: 5%;
-}
-
-#content-right img {
-	width: 90%;
-}
-
 
 #main-content-div h1 {
 	text-decoration: underline;
-	margin: 20%%;
+	font-size: 2em;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 
 }
 
+#main-content-div h2 {
+	font-style: italic;
+	font-size: 1.2em;
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
 #main-content-div h3 {
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	font-size: 1.5em;
 }
 
 #main-content-div p {
@@ -252,24 +213,52 @@ MAIN CONTENT
 }
 
 
-#gallery_div img {
-	width: 30%;
-
-}
-
-
 
 #default-content {
 	display: block;
+	margin-top: 250px;
+	margin-bottom: 100px;
 }
 
 #foodmenu {
 	display: none;
+	width: 100%;
+	z-index: 5;
+	margin-top: 250px;
+	margin-bottom: 100px;
 }
 
 #boozemenu {
 	display: none;
+	width: 100%;
+	z-index: 5;
+	margin-top: 250px;
+	margin-bottom: 100px;
 }
+
+#gamesmenu {
+	display: none;
+	width: 100%;
+	z-index: 5;
+	margin-top: 250px;
+	margin-bottom: 100px;
+}
+
+#gamesmenu p {
+	float: left;
+	display: inline;
+}
+
+#gamesmenu img {
+	float:right;
+	width: 20%;
+	height: 40%;
+	display: inline;
+}
+
+/************
+FOOTER
+************/
 
 
 #footer {
@@ -278,7 +267,7 @@ MAIN CONTENT
 	height: 5%;
 	width: 100%;
 	z-index: 1;
-	background-color: rgba(19,20,25,.8);
+	background-color: rgba(19,20,25, .8);
 	color: white;
 	text-align: center;
 	font-size: .5em;
@@ -287,7 +276,6 @@ MAIN CONTENT
 #footer p {
 	padding-top: 2%;
 }
-
 
 
 

@@ -4,5 +4,37 @@
 
 //Steps
 //1. attach click handler to nav elements
-//2. select the right content
-//3. display as overlay/lightbox type window
+
+$('#foodmenu-nav').click(function() {
+	console.log('clicked for food')
+	//2. select the right content and toggle on off
+	$('#foodmenu').toggle()
+	//3. hide previous content
+	$('#default-content').hide()
+	$('#boozemenu').hide()
+	$('#gamesmenu').hide()
+});
+
+$('#boozemenu-nav').click(function() {
+	console.log('clicked for drinks')
+	//2. select the right content and display
+	$('#boozemenu').toggle()
+	//3. hide previous content
+	$('#default-content').hide()
+	$('#foodmenu').hide()
+	$('#gamesmenu').hide()
+});
+
+$('#gamesmenu-nav').click(function() {
+	console.log('clicked for games')
+	//2. select the right content and display
+	$('#gamesmenu').toggle()
+	//3. hide previous content
+	$('#default-content').hide()
+	$('#foodmenu').hide()
+	$('#boozemenu').hide()
+});
+
+
+
+
