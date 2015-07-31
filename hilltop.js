@@ -12,7 +12,7 @@ $('#foodmenu-nav').click(function() {
 	//3. hide previous content
 	$('#default-content').hide()
 	$('#boozemenu').hide()
-	$('#gamesmenu').hide()
+	$('#gallery').hide()
 });
 
 $('#boozemenu-nav').click(function() {
@@ -22,13 +22,13 @@ $('#boozemenu-nav').click(function() {
 	//3. hide previous content
 	$('#default-content').hide()
 	$('#foodmenu').hide()
-	$('#gamesmenu').hide()
+	$('#gallery').hide()
 });
 
-$('#gamesmenu-nav').click(function() {
-	console.log('clicked for games')
+$('#gallery-nav').click(function() {
+	console.log('clicked for gallery')
 	//2. select the right content and display
-	$('#gamesmenu').toggle()
+	$('#gallery').toggle()
 	//3. hide previous content
 	$('#default-content').hide()
 	$('#foodmenu').hide()

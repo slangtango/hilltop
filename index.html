@@ -24,25 +24,21 @@
 		  	</div>
 		  	<div class="nav-element">	
 		  		<img src="Images/elephant.jpg">
-		  		<span id="gamesmenu-nav">Games</span>
+		  		<span id="gallery-nav">Gallery</span>
 			</div>
 		</div>	
 	</div>
 
 <!--Next create a permanent sidebar with basic information -->
 	<div id="sidebar">
-		<h1>Bar Hours</h1>
+		<h1>Hours</h1>
 				<p>Monday - Sunday</p> 
 				<p>5pm-2am</p>
 				<p>Tuesday - Saturday</p> 
-				<p> 5pm-4am</p>
-		<h1>Kitchen Hours</h1>
-				<p>Sunday-Thursday</p> 
-				<p>5pm-1am</p>
-				<p>Friday - Saturday</p> 
-				<p>5pm-3am</p>
-		<h1>502-742-2908</h1>
-		<h1>Address</h1>
+				<p> 5pm-4am</p><br>
+				<p>Kitchen closes one hour before bar</p>
+		<h1>Contact</h1>
+			<p>502-742-2908</p><br>
 			<p>1800 Frankfort Avenue</p>
 			<p>Louisville KY, 40206</p>
 			<p>Like us on <a href="http://www.facebook.com/ilovehilltop">Facebook</a></p>
@@ -61,6 +57,7 @@
 			</div>
 				
 			<div id="foodmenu">
+				<img src="Images/fritters.jpg">
 				<h1>Appetizers</h1>
 					<h3>Jumbo Smoked Whole Wings $8.99</h3>
 						<p>4 whole wings, smoked and fried with your choice of Spicy Buffalo, Louisville Red, or Mango Habanero. <i>Ranch, Blue Cheese, and Celery on request</i></P>
@@ -149,6 +146,7 @@
 
 			</div>
 			<div id="boozemenu">
+				<img src="Images/drinks.jpg">
 				<h1>Bottles</h1>
 					<p>Crabbies Ginger Beer, Crabbies Lemonade - $5.50</p>
 					<p>Northcoast Scrimshaw Pilsner, Stella Artois, Corona, Blue Moon - $5</p>
@@ -205,11 +203,12 @@
 					<h3>Violet's Blueberry Tea - $4.50</h3>
 						<p>Stoli Blueberry vodka, iced tea, and lemonade on the rocks</p>
 			</div>
-			<div id="gamesmenu">
-				<h1>Fun</h1>
-					<p>Hilltop Tavern offers patrons a variety of fun board games, including such classics as Sorry!, Clue, Operation, Battleship, Trivial Pursuit, Apples to Apples, amd Jenga, as well as many others. We also have two foosball tables and some classic arcade games.</p>
-					<img src="Images/games.jpg" alt="A lot of board games"> 
-
+			<div id="gallery">
+				<h1>Gallery</h1>
+					<div id="rotator">
+						<p id="caption"></p>
+						<img id="displayed_Image">
+					</div>		
 			</div> 
 		</div>
 
@@ -219,4 +218,5 @@
 	</div>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="hilltop.js"></script>
+	<script src="rotator.js"></script>
 </body>
