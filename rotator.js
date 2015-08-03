@@ -9,19 +9,19 @@ var imgArray = new Array();
 
 imgArray[0] = new Image();
 imgArray[0].src = 'Images/sauces.jpg';
-imgArray[0].caption = "Our barbecue sauces have won Best of Louisville two years in a row!"
+imgArray[0].caption = "Hilltop's barbecue sauces have won Best of Louisville two years in a row!"
 
 imgArray[1] = new Image();
 imgArray[1].src = 'Images/chickenwaffles.jpg';
-imgArray[1].caption = "Chicken and waffles with the bourbon caramel sauce are always a favorite"
+imgArray[1].caption = "Chicken and waffles with our bourbon caramel sauce!"
 
 imgArray[2] = new Image();
 imgArray[2].src = 'Images/wings.jpg';
-imgArray[2].caption = "Our wings are huge"
+imgArray[2].caption = "Our full-size wings never leave you hungry!"
 
 imgArray[3] = new Image();
 imgArray[3].src = 'Images/games.jpg';
-imgArray[3].caption = "We have loads of games to play, as well as a foosball table and two arcade machines"
+imgArray[3].caption = "We have loads of games to play, as well as a foosball table and two arcade machines."
 
 imgArray[4] = new Image();
 imgArray[4].src = 'Images/crowdwall.jpg';

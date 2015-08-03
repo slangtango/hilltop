@@ -8,7 +8,7 @@
 $('#foodmenu-nav').click(function() {
 	console.log('clicked for food')
 	//2. select the right content and toggle on off
-	$('#foodmenu').toggle()
+	$('#foodmenu').show()
 	//3. hide previous content
 	$('#default-content').hide()
 	$('#boozemenu').hide()
@@ -18,7 +18,7 @@ $('#foodmenu-nav').click(function() {
 $('#boozemenu-nav').click(function() {
 	console.log('clicked for drinks')
 	//2. select the right content and display
-	$('#boozemenu').toggle()
+	$('#boozemenu').show()
 	//3. hide previous content
 	$('#default-content').hide()
 	$('#foodmenu').hide()
@@ -28,13 +28,21 @@ $('#boozemenu-nav').click(function() {
 $('#gallery-nav').click(function() {
 	console.log('clicked for gallery')
 	//2. select the right content and display
-	$('#gallery').toggle()
+	$('#gallery').show()
 	//3. hide previous content
 	$('#default-content').hide()
 	$('#foodmenu').hide()
 	$('#boozemenu').hide()
 });
 
-
+$('#hours-nav').click(function() {
+	console.log('clicked for gallery')
+	//2. select the right content and display
+	$('#default-content').show()
+	//3. hide previous content
+	$('#gallery').hide()
+	$('#foodmenu').hide()
+	$('#boozemenu').hide()
+});
 
 
