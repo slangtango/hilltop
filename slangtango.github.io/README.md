@@ -1,2 +1,0 @@
-# hilltop
-Hilltop Tavern Website
