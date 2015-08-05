@@ -103,6 +103,7 @@ NAVIGATION ELEMENTS
 	width: 90%;
 	margin-left: 5%;
 	margin-top: 10px;
+	max-height: 40px;
 }
 
 #navmenu {
@@ -121,11 +122,7 @@ NAVIGATION ELEMENTS
 
 .nav-element img {
 	display: none;
-	width: 65px;
-	height: 65px;
-	border-radius: 50%;
-	float: left;
-	margin-top: 10%;
+
 }
 
 .nav-element span {
@@ -341,11 +338,11 @@ FOOTER
 /********************************************
 STYLES FOR SMALL DEVICES IN LANDSCAPE (WIDER THAN 480, LESS THAN 768)
 ********************************************/
-@media screen and (min-width: 480px)  {
+@media screen and (min-width: 480px) {
 
 /* make top nav bar narrower */
 #topnavbar {
-	height: 20%;
+	height: 50px;
 }
 
 /* shift background image up to account for narrower top bar */
@@ -424,40 +421,47 @@ body {
 }
 
 /********************************************
-STYLES FOR MEDIUM DEVICES (WIDER THAN 768)
+STYLES FOR SMALL TABLETS IN PORTRAIT FORMAT (WIDER THAN 600)
 ********************************************/
-@media screen and (min-width: 768px)  {
-/* make top nav bar narrower */
-#topnavbar {
-	height: 20%;
+
+/* only change is to gallery - images are back to full width */
+@media screen and (min-width: 600px) and (orientation: portrait) {
+#gallery_instructions {
+	width: 80%;
+	float: none;
 }
 
+#rotator {
+	display: inline-block;
+	float: right;
+	width: 90%;
+	margin-top: 5%;
+}
 
-/* display logo and nav in line */
-#logodiv {
-	width: 40%;
-	height: 80%;
-	margin-top: 0;
+} /* end media query for 600+ and portrait */
+
+
+/********************************************
+STYLES FOR LARGE DEVICES (WIDER THAN 768)
+********************************************/
+@media screen and (min-width: 768px)  {
+/* make top nav bar wider */
+#topnavbar {
+	height: 15%;
+	max-height: 120px;
 }
 
 #logodiv img {
-	width: 90%;
-	margin-top: 40px;
+	height: 70%;
+	margin-top: 5%;
+	max-height: 100px;
 }
-
-#navmenu {
-	width: 60%;
-	height: 100%;
-	display: inline-block;
-}
-
-.nav-element img {
-	width: 40%;
-	height: 100%;
-}
-
 /*hide and adjust for missing hours element */
-#hours_nav {
+#hours {
+	display: none;
+}
+
+#default-content {
 	display: none;
 }
 
@@ -465,9 +469,26 @@ STYLES FOR MEDIUM DEVICES (WIDER THAN 768)
 	width: 30%;
 }
 
+/* show menu as new default */
+#foodmenu {
+	display: block;
+}
+
+/* show nav element animal pictures */
+.nav-element img {
+	display: inline-block;
+	width: 30%;
+	height: auto;
+	border-radius: 50%;
+	float: left;
+	margin-top: 5%;
+}
+
+
 /*larger font for nav elements and side bar*/
 .nav-element span {
 	font-size: 1em;
+	margin-top: 20%;
 }
 
 #sidebar h1 {
@@ -477,18 +498,19 @@ STYLES FOR MEDIUM DEVICES (WIDER THAN 768)
 /* display sidebar */
 #sidebar {
 	display: inline;
-	padding-top: 15%;
+	padding-top: 150px;
 }
 
 #main-content-div {
 	position: absolute;
 	left: 22%;
 	width: 76%;
+	padding-top: 50px;
 
 }  /* end query for devices wider than 768 but less than 1024 */
 
 /********************************************
-STYLES FOR LARGE DEVICES (WIDER THAN 1024)
+STYLES FOR EXTRA LARGE DEVICES (WIDER THAN 1024)
 ********************************************/
 @media screen and (min-width: 1024px) {
 
