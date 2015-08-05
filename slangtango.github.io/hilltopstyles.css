@@ -48,6 +48,13 @@ table {
 	border-spacing: 0;
 }
 
+
+/********************************************
+STYLES FOR EXTRA SMALL DEVICES (LESS THAN 600)
+
+STYLES FOR LARGER DEVICE SIZES ARE ADJUSTED AT THE END OF THE FILE
+********************************************/
+
 /*********************
 WHOLE PAGE STYLES
 *********************/
@@ -64,15 +71,16 @@ body {
 	z-index: -1;
 }
 
-/**********************
-NAVIGATION ELEMENTS 
-***********************/
 
+
+/**********************
+NAVIGATION ELEMENTS
+**********************/
 #topnavbar {
 	width: 100%;
-	height: 250px;
+	height: 90px;
 	position: fixed;
-	background: linear-gradient(rgb(19,20,25) 60%, transparent) ;
+	background: rgba(19,20,25,.95); /* linear-gradient(rgb(19,20,25) 60%, transparent) ; */
 	z-index: 2;
 	padding-left: 0px;
 	padding-top: 0px;
@@ -86,23 +94,26 @@ NAVIGATION ELEMENTS
 	font-size: 1.5em;
 	float: left;
 	opacity: 0.9;
-	width: 40%;
-	height: 100%;
+	width: 100%;
+	height: 50px;
+	display: block;
 }
 
 #logodiv img {
 	width: 90%;
-	margin-top: 40px;
+	margin-left: 5%;
+	margin-top: 10px;
+	max-height: 40px;
 }
 
 #navmenu {
-	width: 60%;
-	height: 100%;
-	display: inline-block;
+	width: 100%;
+	height: 30px;
+	display: block;
 }
 
 .nav-element {
-	width: 30%;
+	width: 25%;
  	float: left;
  	text-align: center;
  	vertical-align: middle;
@@ -110,30 +121,20 @@ NAVIGATION ELEMENTS
 }
 
 .nav-element img {
-	width: 40%;
-	border-radius: 50%;
-	float: left;
-	margin-top: 10%;
-}
+	display: none;
 
-.nav-element select {
-	background-color: rgb(19,20,25);
-	color: white;
-	font-size: 1.2em;
-	border: none;
-}
-
-.nav-element select option {
-	background-color: rgb(19,20,25);
-	color: white;
-	font-size: 1.2em;
-	border: none;
 }
 
 .nav-element span {
-	font-size: 1.2em;
-	margin: 30% 0;
+	font-size: 1em;
+	margin: 5px 5% 20px;
 	display: inline-block;
+}
+
+.nav-element span:hover {
+	background-color: red;
+	padding: 5px;
+	border-radius: 5px;
 }
 
 
@@ -141,25 +142,28 @@ NAVIGATION ELEMENTS
 SIDEBAR STYLES
 **********************/
 #sidebar {
+	display: none;
 	position: fixed;
 	height: 100%;
 	width: 20%;
 	background: linear-gradient(to right, rgba(19,20,25,.8), rgba(19,20,25,.5));
 	z-index: 1;
 	margin-left: 0;
-	padding-top: 200px;
-	padding-left: 10px;
+	padding-top: 15%;
+	padding-left: 1%;
+	padding-right: 1%;
 	/* color: rgba(250,248,150,1); alternate yellow color for text */
 	color: white;
 }
 
 #sidebar h1 {
-	font-size: 1.8em;
+	font-size: 1em;
 	text-align: center;
-	margin: 1em 0;
+	margin: 0.6em 0;
 }
 
 #sidebar p {
+	font-size: .8em;
 	text-align: center;
 }
 /*********************
@@ -170,19 +174,19 @@ MAIN CONTENT
 /* Styles for yellow box containing restaurant's food, booze, and games menus */
 #main-content-div {
 	position: absolute;
-	left: 22%;
-	width: 76%;
+	left: 5%;
+	width: 90%;
 	max-width: 1200px;
 	z-index: 0;
 	color: black;
-	background-color: rgba(250,248,150,.4);
+	background-color: rgba(250,248,150,.5);
 	/*optional #FAF896 light yellow */
 
 }
 
 #main-content-div h1 {
 	text-decoration: underline;
-	font-size: 2em;
+	font-size: 1.4em;
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-top: 2%;
@@ -192,7 +196,7 @@ MAIN CONTENT
 
 #main-content-div h2 {
 	font-style: italic;
-	font-size: 1.2em;
+	font-size: 0.8em;
 	margin-left: 8%;
 	margin-right: 8%;
 	margin-top: 2%;
@@ -202,21 +206,22 @@ MAIN CONTENT
 #main-content-div h3 {
 	margin-left: 8%;
 	margin-right: 8%;
-	margin-top: 2%;
+	margin-top: 5%;
 	margin-bottom: 1%;
-	font-size: 1.5em;
+	font-size: 1.1em;
 }
 
 #main-content-div p {
 	margin-left: 10%;
 	margin-right: 10%;
+	font-size: .8em;
 }
 
 
 
 #default-content {
 	display: block;
-	margin-top: 250px;
+	margin-top: 120px;
 	margin-bottom: 100px;
 }
 
@@ -228,7 +233,7 @@ SPECIFIC MENUS
 	display: none;
 	width: 100%;
 	z-index: 5;
-	margin-top: 250px;
+	margin-top: 25%;
 	margin-bottom: 100px;
 }
 
@@ -236,12 +241,11 @@ SPECIFIC MENUS
 	display: none;
 	width: 100%;
 	z-index: 5;
-	margin-top: 250px;
+	margin-top: 25%;
 	margin-bottom: 100px;
 }
 
 #foodmenu img {
-	float:left;
 	width: 80%;
 	height: auto;
 	margin: 10%;
@@ -249,7 +253,6 @@ SPECIFIC MENUS
 }
 
 #boozemenu img {
-	float:left;
 	width: 80%;
 	height: auto;
 	margin: 10%;
@@ -265,29 +268,50 @@ GALLERY AND IMAGE ROTATOR
 	width: 100%;
 	height: 100%;
 	z-index: 5;
-	margin-top: 250px;
+	margin-top: 35%;
 	margin-bottom: 100px;
 }
 
 #gallery h1 {
-	float: left;
-	width: 40%;
+	width: 50%;
+	display: block;
 }
 
-#gallery p {
-	float: left;
-	width: 40%;
+#gallery_instructions {
+	margin-top: 10px;
+	display: block;
+	font-style: italic;
+}
+
+#rotator {
+	float: right;
+	width: 90%;
+	margin: 5%;
+	margin-top: 15%;
+	padding: 0, 15%;
+	position: relative; /* will allow caption to be position absolute on top of the image */
 }
 
 #gallery img {
-	float:left;
-	width: 80%;
+	width: 100%;
 	height: auto;
-	margin: 10%;
 	border-radius: 5%;
 }
 
+#caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+	background-color: rgba(19,20,25,.5);
+	font-size: 0.8em;
+	text-align: center;
+}
 
+#caption p {
+	padding: 20px;
+}
 /************
 FOOTER
 ************/
@@ -311,4 +335,192 @@ FOOTER
 
 
 
+/********************************************
+STYLES FOR SMALL DEVICES IN LANDSCAPE (WIDER THAN 480, LESS THAN 768)
+********************************************/
+@media screen and (min-width: 480px) {
 
+/* make top nav bar narrower */
+#topnavbar {
+	height: 50px;
+}
+
+/* shift background image up to account for narrower top bar */
+body {
+	background-position: 0, 20px;
+}
+
+/* display logo and nav in line */
+#logodiv {
+	width: 40%;
+	height: 80%;
+	margin-top: 0;
+}
+
+#logodiv img {
+	width: 90%;
+	margin-top: 15px;
+}
+
+#navmenu {
+	width: 60%;
+	height: 100%;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+.nav-element img {
+	width: 40%;
+	height: 100%;
+}
+
+/* adjust margins for main content */
+#foodmenu {
+	margin-top: 15%;
+}
+
+#boozemenu {
+	margin-top: 15%;
+}
+
+#gallery {
+	margin-top: 15%;
+}
+
+#default-content {
+	margin-top: 15%;
+}
+
+/* float main content images left */
+#foodmenu img {
+	width: 40%;
+	margin: 5%;
+	float: right;
+}
+
+#boozemenu img {
+	width: 40%;
+	margin: 5%;
+	float: right;
+}
+
+/* adjust image gallery */
+#gallery_instructions {
+	width: 20%;
+	float: left;
+}
+
+#rotator {
+	display: inline-block;
+	float: right;
+	width: 50%;
+	margin: 5%;
+	margin-top: 0;
+	padding: 0, 15%;
+	position: relative; /* will allow caption to be position absolute on top of the image */
+}
+
+/********************************************
+STYLES FOR SMALL TABLETS IN PORTRAIT FORMAT (WIDER THAN 600)
+********************************************/
+
+/* only change is to gallery - images are back to full width */
+@media screen and (min-width: 600px) and (orientation: portrait) {
+#gallery_instructions {
+	width: 80%;
+	float: none;
+}
+
+#rotator {
+	display: inline-block;
+	float: right;
+	width: 90%;
+	margin-top: 5%;
+}
+
+} /* end media query for 600+ and portrait */
+
+
+/********************************************
+STYLES FOR LARGE DEVICES (WIDER THAN 768)
+********************************************/
+@media screen and (min-width: 768px)  {
+/* make top nav bar wider */
+#topnavbar {
+	height: 15%;
+	max-height: 120px;
+}
+
+#logodiv img {
+	height: 70%;
+	margin-top: 5%;
+	max-height: 100px;
+}
+/*hide and adjust for missing hours element */
+#hours {
+	display: none;
+}
+
+#default-content {
+	display: none;
+}
+
+.nav-element {
+	width: 30%;
+}
+
+/* show menu as new default */
+#foodmenu {
+	display: block;
+}
+
+/* show nav element animal pictures */
+.nav-element img {
+	display: inline-block;
+	width: 30%;
+	height: auto;
+	border-radius: 50%;
+	float: left;
+	margin-top: 5%;
+}
+
+
+/*larger font for nav elements and side bar*/
+.nav-element span {
+	font-size: 1em;
+	margin-top: 20%;
+}
+
+#sidebar h1 {
+	font-size: 1.2em;
+}
+
+/* display sidebar */
+#sidebar {
+	display: inline;
+	padding-top: 150px;
+}
+
+#main-content-div {
+	position: absolute;
+	left: 22%;
+	width: 76%;
+	padding-top: 50px;
+
+}  /* end query for devices wider than 768 but less than 1024 */
+
+/********************************************
+STYLES FOR EXTRA LARGE DEVICES (WIDER THAN 1024)
+********************************************/
+@media screen and (min-width: 1024px) {
+
+/*larger font for nav elements and side bar*/
+.nav-element span {
+	font-size: 1.2em;
+}
+
+#sidebar h1 {
+	font-size: 1.8em;
+}
+
+}  /* end query for devices wider than 1024 */

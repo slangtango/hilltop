@@ -10,23 +10,27 @@ var imgArray = new Array();
 imgArray[0] = new Image();
 imgArray[0].src = 'Images/sauces.jpg';
 imgArray[0].caption = "Hilltop's barbecue sauces have won Best of Louisville two years in a row!"
+imgArray[0].alt = "Picture of barbecue sauce bottles"
 
 imgArray[1] = new Image();
 imgArray[1].src = 'Images/chickenwaffles.jpg';
 imgArray[1].caption = "Chicken and waffles with our bourbon caramel sauce!"
+imgArray[1].alt = "Picture of a plate of chicken and waffles"
 
 imgArray[2] = new Image();
 imgArray[2].src = 'Images/wings.jpg';
 imgArray[2].caption = "Our full-size wings never leave you hungry!"
+imgArray[2].alt = "Picture of a plate of chicken wings"
 
 imgArray[3] = new Image();
 imgArray[3].src = 'Images/games.jpg';
 imgArray[3].caption = "We have loads of games to play, as well as a foosball table and two arcade machines."
+imgArray[3].alt = "Picture of stack of board games"
 
 imgArray[4] = new Image();
 imgArray[4].src = 'Images/crowdwall.jpg';
 imgArray[4].caption = "We can't wait to see you!"
-
+imgArray[4].alt = "Picture of restaurant staff waving"
 
 
 //1.5 attach a JS variable to the DOM image object
@@ -35,6 +39,7 @@ var displayedCaption = document.getElementById("caption");
 
 //display the first image and caption
 displayedImage.src = imgArray[0].src;
+displayedImage.alt = imgArray[0].alt;
 displayedCaption.innerHTML = imgArray[0].caption;
 var index = 0;
 
@@ -51,12 +56,10 @@ function rotateImage() {
 		index += 1;
 	};
 	displayedImage.src = imgArray[index].src;
+	displayedImage.alt = imgArray[index].alt;
 	displayedCaption.innerHTML = imgArray[index].caption;
 };
 
-// 3. Create two arrows for forward and back - HTML
-// 4. capture clicks to those elements - JS
-// 7. add this code to the hilltop.js file
 
 
 
